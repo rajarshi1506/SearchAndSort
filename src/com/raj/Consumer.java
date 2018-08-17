@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 import com.raj.search.SearchFactory;
 import com.raj.search.SearchModes;
-import com.search.sort.SortFactory;
-import com.search.sort.SortModes;
+import com.raj.sort.SortFactory;
+import com.raj.sort.SortModes;
 
 public class Consumer {
 

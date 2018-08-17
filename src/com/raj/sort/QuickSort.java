@@ -1,4 +1,4 @@
-package com.search.sort;
+package com.raj.sort;
 
 public class QuickSort implements Sort {
 
