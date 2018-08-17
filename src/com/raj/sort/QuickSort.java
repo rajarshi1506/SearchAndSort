@@ -18,19 +18,24 @@ public class QuickSort implements Sort {
 	}
 
 	private void quickSort(int lowIndex, int highIndex) {
+		// left side, we move from start towards pivot
 		int i = lowIndex;
+		// right side, we move from end towards pivot
 		int j = highIndex;
 
 		int pivot = arr[(lowIndex + highIndex) / 2];
 		while (i <= j) {
 
-			//check if element is smaller than pivot, if so, please move to next element
+			// check if element is smaller than pivot, if so, please move to next element
 			while (arr[i] < pivot)
 				i++;
-			//check if element is greater than pivot, if so, please move to previous element
+			// check if element is greater than pivot, if so, please move to previous
+			// element
 			while (arr[j] > pivot)
 				j--;
 
+			// i will be less than j if an element is not in the right position with respect
+			// to pivot
 			if (i <= j) {
 				int temp = arr[i];
 				arr[i] = arr[j];
